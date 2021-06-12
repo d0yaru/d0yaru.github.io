@@ -1,0 +1,28 @@
+body {
+	background-color: #222;
+    color: #ddd;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    background-color: #d26a22;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+a:hover {
+    background-color: #bf601f;
+}
+
+span {
+    color: #555;
+    font-style: italic;
+}
+
+.wrapper {
+    background-color: #333;
+    max-width: 900px;
+    padding: 20px;
+    margin: 0 auto;
+}
