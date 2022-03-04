@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #30d5c8;
+  border-bottom: 1px solid #ffd700;
+}
+
+a:hover {
+  color: #ffd700;
+}
+
+body {
+  background-color: #333;
+  color: #30d5c8;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.box {
+  border: 1px solid #30d5c8;
+  background-color: #334443;
+  margin: 3px;
+  padding: 10px;
+  position: relative;
+}
+
+.box:before {
+  border-right: 1px solid #30d5c8;
+  width: 7px;
+  height: 14px;
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+  left: -2px;
+  top: -6px;
+  background: #333;
+}
+
+.box:after {
+  border-left: 1px solid #30d5c8;
+  width: 7px;
+  height: 14px;
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+  right: -2px;
+  bottom: -6px;
+  background: #333;
+}
+
+.box2 {
+  border: 1px solid #30d5c8;
+  background-color: rgba(48, 213, 200, 0.03);
+  margin: 6px;
+  padding: 20px;
+  position: relative;
+}
+
+.box2:before {
+  border-right: 1px solid #30d5c8;
+  width: 7px;
+  height: 14px;
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+  left: -2px;
+  top: -6px;
+  background: #334443;
+}
+
+.box2:after {
+  border-left: 1px solid #30d5c8;
+  width: 7px;
+  height: 14px;
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+  right: -2px;
+  bottom: -6px;
+  background: #334443;
+}
+
+*::-moz-selection {
+  background: rgba(48, 213, 200, 0.3);
+  /* Safari */
+}
+
+*::selection {
+  background: rgba(48, 213, 200, 0.3);
+  /* Safari */
+}
+
+*::-moz-selection {
+  background: rgba(48, 213, 200, 0.3);
+  /* Firefox */
+}
+
+.code {
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  font-style: normal;
+}
+
+.cmd {
+  -webkit-user-select: all;
+     -moz-user-select: all;
+      -ms-user-select: all;
+          user-select: all;
+  font-style: normal;
+  color: #c0c0c0;
+}
+
+.btn {
+  padding: 6px 20px;
+  background: rgba(48, 213, 200, 0.1);
+  border: 1px solid #30d5c8;
+  position: relative;
+  margin: 6px 5px 6px 0;
+  display: block;
+}
+
+.btn--active {
+  background-color: rgba(48, 213, 200, 0.3);
+  color: #30d5c8;
+}
+
+.btn:before {
+  border-right: 1px solid #30d5c8;
+  width: 7px;
+  height: 14px;
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+  left: -2px;
+  top: -6px;
+  background: #334443;
+}
+
+.btn:after {
+  border-left: 1px solid #30d5c8;
+  width: 7px;
+  height: 14px;
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+  right: -2px;
+  bottom: -6px;
+  background: #334443;
+}
+
+.btn:hover {
+  background-color: rgba(48, 213, 200, 0.3);
+  color: #30d5c8;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copyright {
+  margin-top: 11px;
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-item {
+  margin-top: 11px;
+}
+
+.wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 500px;
+}
+
+.leftmenu {
+  width: 200px;
+  margin: 3px;
+  padding: 10px;
+}
+
+.rightmenu {
+  width: 200px;
+  margin: 3px;
+  padding: 10px;
+}
+
+.content {
+  width: 100%;
+  margin: 3px;
+  padding: 10px;
+}
+/*# sourceMappingURL=mainstyle.css.map */

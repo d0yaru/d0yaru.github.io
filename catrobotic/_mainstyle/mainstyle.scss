@@ -1,0 +1,242 @@
+//-------------------------------------------
+@import "base/color";
+//-------------------------------------------
+// Значения по умолчанию ////////////////////
+//-------------------------------------------
+* {
+	padding: 0;
+	margin: 0;
+	// запрет выделения
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none; 
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: $linkColor;
+	border-bottom: 1px solid $linkhoverColor;
+}
+
+a:hover {
+	color: $linkhoverColor;
+}
+
+body {
+	background-color: $BackgroundColor;
+	color: $TextColor;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	letter-spacing: 0.5px;
+	line-height: 1.5;
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+/////////////////////////////////////////////
+//-------------------------------------------
+.box {
+	border: 1px solid $BorderColor;
+	background-color: $BackgroundBox;
+	// border-radius: 10px 0;
+	margin: 3px;
+	padding: 10px;
+	position: relative;
+}
+
+.box:before {
+	border-right: 1px solid $BorderColor;
+	width: 7px;
+	height: 14px;
+	content: '';
+	position: absolute;
+	-webkit-transform: rotate(50deg);
+	transform: rotate(50deg);
+	left: -2px;
+	top: -6px;
+	background: $BackgroundColor;
+}
+
+.box:after {
+	border-left: 1px solid $BorderColor;
+	width: 7px;
+	height: 14px;
+	content: '';
+	position: absolute;
+	-webkit-transform: rotate(50deg);
+	transform: rotate(50deg);
+	right: -2px;
+	bottom: -6px;
+	background: $BackgroundColor;
+}
+//-------------------------------------------
+//-------------------------------------------
+.box2 {
+	border: 1px solid $BorderColor;
+	background-color: rgba(48, 213, 200, 0.03);
+	// border-radius: 10px 0;
+	margin: 6px;
+	padding: 20px;
+	position: relative;
+}
+
+.box2:before {
+	border-right: 1px solid $BorderColor;
+	width: 7px;
+	height: 14px;
+	content: '';
+	position: absolute;
+	-webkit-transform: rotate(50deg);
+	transform: rotate(50deg);
+	left: -2px;
+	top: -6px;
+	background: $BackgroundBox;
+}
+
+.box2:after {
+	border-left: 1px solid $BorderColor;
+	width: 7px;
+	height: 14px;
+	content: '';
+	position: absolute;
+	-webkit-transform: rotate(50deg);
+	transform: rotate(50deg);
+	right: -2px;
+	bottom: -6px;
+	background: $BackgroundBox;
+}
+//-------------------------------------------
+// Цвет выделения ///////////////////////////
+*::selection {
+	background: rgba(48, 213, 200, 0.3); /* Safari */
+}
+*::-moz-selection {
+	background: rgba(48, 213, 200, 0.3); /* Firefox */
+}
+//-------------------------------------------
+.code {
+	user-select: text;
+	font-style: normal;
+}
+
+.cmd {
+	user-select: all;
+	font-style: normal;
+	color: $CmdColor;
+}
+//-------------------------------------------
+.btn {
+	padding: 6px 20px;
+	background: rgba(48, 213, 200, 0.1);
+	border: 1px solid $BorderColor;
+	position: relative;
+	margin: 6px 5px 6px 0;
+	display: block;
+
+	&--active {
+		background-color: rgba(48, 213, 200, 0.3);
+		color: $linkColor;
+	}
+}
+
+.btn:before {
+	border-right: 1px solid $BorderColor;
+	width: 7px;
+	height: 14px;
+	content: '';
+	position: absolute;
+	-webkit-transform: rotate(50deg);
+	transform: rotate(50deg);
+	left: -2px;
+	top: -6px;
+	background: $BackgroundBox;
+}
+
+.btn:after {
+	border-left: 1px solid $BorderColor;
+	width: 7px;
+	height: 14px;
+	content: '';
+	position: absolute;
+	-webkit-transform: rotate(50deg);
+	transform: rotate(50deg);
+	right: -2px;
+	bottom: -6px;
+	background: $BackgroundBox;
+}
+//-------------------------------------------
+.btn:hover {
+	background-color: rgba(48, 213, 200, 0.3);
+	color: $linkColor;
+	// border: 1px solid $linkhoverColor;
+}
+//-------------------------------------------
+// header ///////////////////////////////////
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title {
+	font-size: 28px;
+}
+//-------------------------------------------
+// footer ///////////////////////////////////
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.copyright {
+	margin-top: 11px;
+}
+//-------------------------------------------
+// Меню /////////////////////////////////////
+.menu {
+	// border: 1px solid #30d5c8;
+
+	&-list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&-item {
+		margin-top: 11px;
+	}
+}
+/////////////////////////////////////////////
+//-------------------------------------------
+.wrapper {
+	max-width: 1350px;
+	margin: 0 auto;
+}
+
+.page {
+	display: flex;
+	justify-content: space-between;
+	min-height: 500px;
+}
+
+.leftmenu {
+	width: 200px;
+	margin: 3px;
+	padding: 10px;
+}
+
+.rightmenu {
+	width: 200px;
+	margin: 3px;
+	padding: 10px;
+}
+
+.content {
+	width: 100%;
+	margin: 3px;
+	padding: 10px;
+}
+//-------------------------------------------
