@@ -1,0 +1,152 @@
+/* -------------------------------------------------------------------------- */
+/* Обнуление */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    list-style-type: none;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* index.html */
+/* -------------------------------------------------------------------------- */
+body {
+    background-color: #333;
+    color: #aaa;/* Цвет текста */
+    font-family: 'Roboto', sans-serif;/* Шрифт */
+    letter-spacing: 0.5px;/* интервал между букв */
+    line-height: 1.5;/* интервал между строк */
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* page.js */
+/* -------------------------------------------------------------------------- */
+.wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    border: 1px solid #30d5c8;
+    background-color: #334443;
+    margin: 3px;
+    padding: 10px;
+    position: relative;
+}
+
+.title {
+    font-size: 28px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftmenu {
+    width: 200px;
+    margin: 3px;
+    padding: 10px;
+}
+
+.content {
+    width: 100%;
+    margin: 3px;
+    padding: 10px;
+}
+
+.rightmenu {
+    width: 200px;
+    margin: 3px;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.copyright {
+    margin-top: 11px;
+}
+
+.page {
+    display: flex;
+    justify-content: space-between;
+    min-height: 500px;
+}
+/* -------------------------------------------------------------------------- */
+
+h1 {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #30d5c8;
+    border-bottom: 1px solid #ffd700;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+li {
+    margin-left: 15px;
+}
+
+b {
+    color: #c0c0c0;
+}
+
+i {
+    color: #30d5c8;/* Цвет текста */
+}
+
+hr {
+    border: none;
+    background-color: #30d5c8;
+    height: 1px;
+    margin: 5px;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* Блоки */
+.box2 {
+    border: 1px solid #30d5c8;
+    background-color: rgba(48, 213, 200, 0.03);
+    margin: 6px;
+    padding: 20px;
+    position: relative;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* Кнопки */
+.btn {
+    padding: 6px 20px;
+    background: rgba(48, 213, 200, 0.1);
+    border: 1px solid #30d5c8;
+    position: relative;
+    margin: 6px 5px 6px 0;
+    display: block;
+}
+
+.btn:hover {
+    background-color: rgba(48, 213, 200, 0.3);
+    color: #30d5c8;
+}
+
+.btn--active {
+    background-color: rgba(48, 213, 200, 0.3);
+    color: #30d5c8;
+}
+/* -------------------------------------------------------------------------- */
